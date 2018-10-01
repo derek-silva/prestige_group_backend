@@ -244,7 +244,7 @@ OwnAPLE = Stock.create(
 
 
 
-def update_aum
+def update_holding_aum_control
 	Holding.all.each do |holding|
 		holding.stocks.each do |stock|
 			#binding.pry
@@ -260,4 +260,4 @@ def update_aum
 	end
 end
 
-update_aum
+update_holding_aum_control
