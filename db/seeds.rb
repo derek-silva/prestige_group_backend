@@ -29,10 +29,10 @@ PFE_Key_Stats = IEX::Resources::KeyStats.get('PFE')
 PFE_Price = IEX::Resources::Price.get('PFE')
 PFE_Logo = IEX::Resources::Logo.get('PFE')
 
-PG = IEX::Resources::Company.get('PG')
-PG_Key_Stats = IEX::Resources::KeyStats.get('PG')
-PG_Price = IEX::Resources::Price.get('PG')
-PG_Logo = IEX::Resources::Logo.get('PG')
+PROCGAMB = IEX::Resources::Company.get('PG')
+PROCGAMB_Key_Stats = IEX::Resources::KeyStats.get('PG')
+PROCGAMB_Price = IEX::Resources::Price.get('PG')
+PROCGAMB_Logo = IEX::Resources::Logo.get('PG')
 
 
 AAPL = IEX::Resources::Company.get('AAPL')
