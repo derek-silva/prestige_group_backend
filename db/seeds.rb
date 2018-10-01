@@ -12,6 +12,52 @@ Microsoft_Key_Stats = IEX::Resources::KeyStats.get('MSFT')
 Microsoft_Price = IEX::Resources::Price.get('MSFT')
 Microsoft_Logo = IEX::Resources::Logo.get('MSFT')
 
+#AAPL, GOOG, FB, TSLA, AMZN
+
+#JNJ, PFE, PG
+JNJ = IEX::Resources::Company.get('JNJ')
+JNJ_Key_Stats = IEX::Resources::KeyStats.get('JNJ')
+JNJ_Price = IEX::Resources::Price.get('JNJ')
+JNJ_Logo = IEX::Resources::Logo.get('JNJ')
+
+
+PFE = IEX::Resources::Company.get('PFE')
+PFE_Key_Stats = IEX::Resources::KeyStats.get('PFE')
+PFE_Price = IEX::Resources::Price.get('PFE')
+PFE_Logo = IEX::Resources::Logo.get('PFE')
+
+PG = IEX::Resources::Company.get('PG')
+PG_Key_Stats = IEX::Resources::KeyStats.get('PG')
+PG_Price = IEX::Resources::Price.get('PG')
+PG_Logo = IEX::Resources::Logo.get('PG')
+
+
+AAPL = IEX::Resources::Company.get('AAPL')
+AAPL_Key_Stats = IEX::Resources::KeyStats.get('AAPL')
+AAPL_Price = IEX::Resources::Price.get('AAPL')
+AAPL_Logo = IEX::Resources::Logo.get('AAPL')
+
+
+GOOG = IEX::Resources::Company.get('GOOG')
+GOOG_Key_Stats = IEX::Resources::KeyStats.get('GOOG')
+GOOG_Price = IEX::Resources::Price.get('GOOG')
+GOOG_Logo = IEX::Resources::Logo.get('GOOG')
+
+FB = IEX::Resources::Company.get('FB')
+FB_Key_Stats = IEX::Resources::KeyStats.get('FB')
+FB_Price = IEX::Resources::Price.get('FB')
+FB_Logo = IEX::Resources::Logo.get('FB')
+
+TSLA = IEX::Resources::Company.get('TSLA')
+TSLA_Key_Stats = IEX::Resources::KeyStats.get('TSLA')
+TSLA_Price = IEX::Resources::Price.get('TSLA')
+TSLA_Logo = IEX::Resources::Logo.get('TSLA')
+
+AMZN = IEX::Resources::Company.get('AMZN')
+AMZN_Key_Stats = IEX::Resources::KeyStats.get('AMZN')
+AMZN_Price = IEX::Resources::Price.get('AMZN')
+AMZN_Logo = IEX::Resources::Logo.get('AMZN')
+
 
 
 #GP
@@ -19,7 +65,10 @@ DonSean = GeneralPartner.create(name:"Don Sean", aum:500000000000, alma_mater:"U
 
 
 #Viking Holding
-Viking = Holding.create(general_partner: DonSean, holding_name: "Viking",sector: "Technology", controlling_interests: ["MSFT"], total_holding_assets: 300000000000)
+Viking = Holding.create(general_partner: DonSean, holding_name: "Viking",sector: "Technology", controlling_interests: ["MSFT"], total_holding_assets: Microsoft_Price*3000000000
+
+#JeJu Holding
+# JeJu = Holding.create()
 
 # Create MSFT Shares
 OwnMicrosoft = Stock.create(
