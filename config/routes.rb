@@ -6,5 +6,5 @@ Rails.application.routes.draw do
       resources :investors, only: [:create, :index]
       post '/login', to: 'auth#create'
       get '/profile', to: 'investors#profile'
-
+      mount ActionCable.server => '/cable'
 end
