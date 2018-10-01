@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_30_000124) do
+ActiveRecord::Schema.define(version: 2018_10_01_155059) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,17 @@ ActiveRecord::Schema.define(version: 2018_09_30_000124) do
     t.decimal "total_holding_assets"
     t.index ["controlling_interests"], name: "index_holdings_on_controlling_interests", using: :gin
     t.index ["general_partner_id"], name: "index_holdings_on_general_partner_id"
+  end
+
+  create_table "investors", force: :cascade do |t|
+    t.string "name"
+    t.string "username"
+    t.string "password_digest"
+    t.string "bio"
+    t.string "avatar"
+    t.decimal "investmentamount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "stocks", force: :cascade do |t|

@@ -26,10 +26,15 @@ PFE_Key_Stats = IEX::Resources::KeyStats.get('PFE')
 PFE_Price = IEX::Resources::Price.get('PFE')
 PFE_Logo = IEX::Resources::Logo.get('PFE')
 
-PG = IEX::Resources::Company.get('PG')
-PG_Key_Stats = IEX::Resources::KeyStats.get('PG')
-PG_Price = IEX::Resources::Price.get('PG')
-PG_Logo = IEX::Resources::Logo.get('PG')
+# PG = IEX::Resources::Company.get('PG')
+# PG_Key_Stats = IEX::Resources::KeyStats.get('PG')
+# PG_Price = IEX::Resources::Price.get('PG')
+# PG_Logo = IEX::Resources::Logo.get('PG')
+
+PROCGAMBLE = IEX::Resources::Company.get('PG')
+PROCGAMBLE_Key_Stats = IEX::Resources::KeyStats.get('PG')
+PROCGAMBLE_Price = IEX::Resources::Price.get('PG')
+PROCGAMBLE_Logo = IEX::Resources::Logo.get('PG')
 
 
 AAPL = IEX::Resources::Company.get('AAPL')
@@ -65,7 +70,7 @@ DonSean = GeneralPartner.create(name:"Don Sean", aum:500000000000, alma_mater:"U
 
 
 #Viking Holding
-Viking = Holding.create(general_partner: DonSean, holding_name: "Viking",sector: "Technology", controlling_interests: ["MSFT"], total_holding_assets: Microsoft_Price*3000000000
+Viking = Holding.create(general_partner: DonSean, holding_name: "Viking",sector: "Technology", controlling_interests: ["MSFT"], total_holding_assets: Microsoft_Price*3000000000)
 
 #JeJu Holding
 # JeJu = Holding.create()

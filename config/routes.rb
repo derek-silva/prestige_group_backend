@@ -3,5 +3,8 @@ Rails.application.routes.draw do
       resources :stocks, except: [:edit]
       resources :holdings
       resources :general_partners, except: [:new, :edit]
+      resources :investors, only: [:create, :index]
+      post '/login', to: 'auth#create'
+      get '/profile', to: 'investors#profile'
 
 end
