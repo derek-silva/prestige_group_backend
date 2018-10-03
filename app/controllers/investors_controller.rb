@@ -1,5 +1,5 @@
 class InvestorsController < ApplicationController
-
+  
 	skip_before_action :authorized, only: [:create]
 
   # def create
